@@ -26,10 +26,7 @@ class HomePage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            "EduBot",
-                            style: theme.textTheme.titleSmall,
-                          ),
+                          Text("EduBot", style: theme.textTheme.titleSmall),
                           const SizedBox(height: 4),
                           Container(
                             decoration: BoxDecoration(
@@ -38,8 +35,9 @@ class HomePage extends StatelessWidget {
                             ),
                             padding: const EdgeInsets.all(8.0),
                             // This Text exist on fois open chat [New Conversation]
-                            child:  Text(
-                              "Hi there! I'm EduBot, your AI-powered study assistant. How can I help you today?",style:GoogleFonts.openSans(),
+                            child: Text(
+                              "Hi there! I'm EduBot, your AI-powered study assistant. How can I help you today?",
+                              style: GoogleFonts.openSans(),
                               softWrap: true,
                             ),
                           ),
@@ -52,12 +50,38 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Spacer(),
-          TextField(
-            decoration: InputDecoration(
-              hint: Text("Ask me anything..."),
-              hintStyle: theme.textTheme.titleSmall!.copyWith(color: Colors.grey.withValues(alpha: 0.4))
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20),
+            child: TextField(
+              maxLines: null,
+              textCapitalization: TextCapitalization.sentences,
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: Colors.black87,
+              ),
+              decoration: InputDecoration(
+                hintText: "Ask me anything...",
+                hintStyle: theme.textTheme.bodyMedium?.copyWith(
+                  color: Colors.grey.shade500,
+                ),
+                filled: true,
+                fillColor: Colors.grey.shade100,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+                suffixIcon:Icon(FontAwesomeIcons.paperPlane , size: 20, color: theme.colorScheme.primary,),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: BorderSide.none,
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: BorderSide(
+                    color: theme.colorScheme.primary,
+                    width: 1.8,
+                  ),
+                ),
+              ),
             ),
-          )
+          ),
+
         ],
       ),
     );

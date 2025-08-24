@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-ThemeData  lightTheme = ThemeData(
 
+ThemeData  lightTheme = ThemeData(
+    fontFamily: 'Roboto',
     colorScheme: ColorScheme.light(
       secondary: Colors.white,
-        onSecondary: Colors.blue
+        onSecondary: Colors.blue,
+        onPrimary: Colors.black
     ),
     textTheme: TextTheme(
-        titleMedium:  GoogleFonts.poppins( fontSize: 24 ,fontWeight: FontWeight.w400 , color: Colors.black),
-        titleSmall:  GoogleFonts.openSans( fontSize: 14 ,fontWeight: FontWeight.w400 , color: Colors.black)
+        titleMedium:  TextStyle(  fontSize: 24 ,fontWeight: FontWeight.w300 , color: Colors.black),
+        titleSmall:  TextStyle( fontSize: 14 ,fontWeight: FontWeight.w300, color: Colors.black)
     ),
 
 );
