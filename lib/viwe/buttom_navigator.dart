@@ -54,7 +54,7 @@ class _ButtomNavigatorState extends State<ButtomNavigator> {
         ],
       ),
       body: SafeArea(
-        child: Padding(padding: EdgeInsets.symmetric(horizontal: 20) ,child: screen [_currentIndex],),
+        child: screen [_currentIndex],
       ),
     );
   }

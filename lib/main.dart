@@ -1,10 +1,13 @@
 import 'package:ai_chat/theme/dark_theme.dart';
 import 'package:ai_chat/theme/ligth_theme.dart';
+import 'package:ai_chat/viwe/Home/home_page.dart';
 import 'package:ai_chat/viwe/buttom_navigator.dart';
 import 'package:flutter/material.dart';
 
 
+
 void main() {
+
 
   runApp(const MyApp());
 }
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'Ai Chat Bot Edu',
       theme:lightTheme,
       themeMode:ThemeMode.light,
-      home:  ButtomNavigator(),
+      home:  HomePage(),
     );
   }
 }
