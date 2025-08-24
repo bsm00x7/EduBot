@@ -10,7 +10,7 @@ class ChatController with ChangeNotifier {
   TextEditingController controller = TextEditingController();
 
   ChatController() {
-    Gemini.init(apiKey: 'AIzaSyAPw_uTorkc1PLIbAwiKOjK_yUK8UjXRWo');
+    Gemini.init(apiKey: 'Your api Key');
   }
 
   Future<void> sendRequest() async {
