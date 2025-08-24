@@ -3,7 +3,9 @@ import 'package:ai_chat/theme/ligth_theme.dart';
 import 'package:ai_chat/viwe/buttom_navigator.dart';
 import 'package:flutter/material.dart';
 
+
 void main() {
+
   runApp(const MyApp());
 }
 
