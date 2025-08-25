@@ -10,7 +10,7 @@ class ChatController with ChangeNotifier {
   TextEditingController controller = TextEditingController();
 
   ChatController() {
-    Gemini.init(apiKey: 'Your api Key');
+    Gemini.init(apiKey: 'AIzaSyAPw_uTorkc1PLIbAwiKOjK_yUK8UjXRWo');
   }
 
   Future<void> sendRequest() async {
@@ -45,7 +45,9 @@ class ChatController with ChangeNotifier {
       notifyListeners();
     }
   }
+ Future <void> sendRequestImageText()async{
 
+ }
   // Method to clear chat history
   void clearChat() {
     questionReponse = [

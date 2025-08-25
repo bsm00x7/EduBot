@@ -461,6 +461,45 @@ class _HomePageState extends State<HomePage>
                 color: Colors.grey.shade800,
               ),
               decoration: InputDecoration(
+                icon: AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
+                  margin: const EdgeInsets.all(4),
+                  decoration: BoxDecoration(
+                    gradient: provider.isloading
+                        ? null
+                        : LinearGradient(
+                      colors: [
+                        theme.colorScheme.primary,
+                        theme.colorScheme.primary.withOpacity(0.8),
+                      ],
+                    ),
+                    color: provider.isloading ? Colors.grey.shade400 : null,
+                    shape: BoxShape.circle,
+                  ),
+                  child: InkWell(
+                    onTap: provider.isloading ? null : provider.sendRequestImageText,
+                    borderRadius: BorderRadius.circular(30),
+                    child: Container(
+                      width: 40,
+                      height: 40,
+                      decoration: const BoxDecoration(shape: BoxShape.circle),
+                      child: provider.isloading
+                          ? const SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                        ),
+                      )
+                          : const Icon(
+                        FontAwesomeIcons.fileImage,
+                        size: 16,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
                 hintText: "Ask me anything...",
                 hintStyle: GoogleFonts.openSans(
                   color: Colors.grey.shade500,
