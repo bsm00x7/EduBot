@@ -1,6 +1,21 @@
-# Chat Application with EduBot
+<p align="center">  
+  <img src="assets/icon/logo.png" width="140" alt="Meteovue Logo"/>  
+</p>  
 
-A Flutter-based chat application that allows users to interact with an intelligent bot named EduBot. The application features a clean user interface, real-time message updates, and support for text and image messages.
+<p align="center">  
+  <b>Chat Application with EduBot</b><br/>  
+A Flutter-based chat application that allows users to interact with an intelligent bot named EduBot. The application features a clean user interface, real-time message updates, and support for text and image message  
+</p>  
+
+<p align="center">  
+  <img src="https://img.shields.io/badge/Flutter-3.22-blue?logo=flutter"/>  
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green?logo=android&logo=apple"/>  
+  <img src="https://img.shields.io/github/license/your-username/meteovue"/>  
+</p>  
+📸 Screenshots
+<p align="center"> <img src="lib/screenshot/Screenshot_20250825_130806.png" width="220" />  </p>
+Chat Screen, 
+---
 
 ## Features
 
