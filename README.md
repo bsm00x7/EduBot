@@ -49,7 +49,5 @@ A Flutter-based chat application that allows users to interact with an intellige
 *   An IDE like Android Studio or VS Code with the Flutter plugin.
     <!-- List any other prerequisites, like API keys if your bot needs them -->
 
-### Installation & Setup
 
-1.  **Clone the repository:**
     
